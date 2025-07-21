@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cancer Care & Consultation</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="state.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cancer Care & Consultation</h1>
+      <p>Your trusted partner in the fight against cancer</p>
+    </header>
+
+    <nav class="text-center py-2 bg-light">
+      <a href="#about">About Us</a>
+      <a href="#services">Services</a>
+      <a href="#doctors">Our Doctors</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about" class="container">
+      <h2 class="section-title">About Us</h2>
+      <p>
+        We provide comprehensive cancer consultation services, personalized
+        treatment plans, and compassionate care tailored to every patient's
+        needs.
+      </p>
+    </section>
+
+    <section id="services" class="container">
+      <div class="box1">
+        <div class="sec">
+          <h2 class="section-title">Our Services</h2>
+          <ul>
+            <li>Early Cancer Detection</li>
+            <li>Chemotherapy and Radiation Guidance</li>
+            <li>Second Opinions on Diagnosis</li>
+            <li>Genetic Counseling</li>
+            <li>Post-Treatment Support</li>
+          </ul>
+        </div>
+
+        <div class="dia">
+          <img src="image/photo-1584515933487-779824d29309.jpeg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="doctors" class="container">
+      <div class="box2">
+        <h2 class="section-title">Our Doctors</h2>
+        <div class="logo">
+          <img src="image/1692010465798.jpeg" alt="" />
+        </div>
+        <div class="card p-3 mb-4">
+          <strong>Dr. Rafia Toor</strong><br />
+          Oncologist & Nutritional expert at Atomic Energy Cancer Hospital NORI
+          Islamabad, with 15+ years of experience in breast and lung cancer
+          treatment.
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4 mb-3">
+          <img
+            src="image/blood_cancer_symptoms.width-700.png.webp"
+            alt="Cancer Symptoms"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img
+            src="image/lb_01_11_men_cancer_signs-graphic_copy_720.jpg.webp"
+            alt="Cancer Fighting Foods"
+            class="img-fluid rounded"
+          />
+        </div>
+        <div class="col-md-4 mb-3">
+          <img
+            src="image/images.jpeg"
+            alt="Red Flag Signs"
+            class="img-fluid rounded"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container">
+      <h2 class="section-title">Contact Us</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" class="form-control" required />
+
+        <label>Email:</label>
+        <input type="email" class="form-control" required />
+
+        <label>Message:</label>
+        <textarea class="form-control" rows="4" required></textarea>
+
+        <button type="submit" class="btn btn-primary mt-2">Send Inquiry</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 Cancer Care & Consultation. All rights reserved.
+    </footer>
+
+    <script>
+      document.querySelector("form").addEventListener("submit", function (e) {
+        e.preventDefault();
+        alert("Your inquiry has been submitted successfully!");
+      });
+    </script>
+  </body>
+</html>
