@@ -103,20 +103,40 @@
 
     <section id="contact" class="container">
       <h2 class="section-title">Contact Us</h2>
-      <form>
+      <form id="form" method="post">
         <label>Name:</label>
-        <input type="text" class="form-control" required />
+        <input
+          type="text"
+          name="name"
+          id="uname"
+          class="form-control"
+          placeholder="name"
+          required
+        />
 
         <label>Email:</label>
-        <input type="email" class="form-control" required />
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          id="uemail"
+          placeholder="email"
+        />
 
         <label>Message:</label>
-        <textarea class="form-control" rows="4" required></textarea>
+        <input
+          type="text"
+          name="message"
+          class="form-control"
+          id="umessage"
+          placeholder="Your message here"
+          rows="4"
+          required
+        />
 
-        <button type="submit" class="btn btn-primary mt-2">Send Inquiry</button>
+        <button type="submit" class="btn btn-primary mt-2">submit</button>
       </form>
     </section>
-
     <footer>
       &copy; 2025 Cancer Care & Consultation. All rights reserved.
     </footer>
