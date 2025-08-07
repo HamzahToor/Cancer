@@ -122,6 +122,20 @@
     </footer>
 
     <script>
+      let url =
+        "https://script.google.com/macros/s/AKfycbzdx5JNf1uZu84QDWgSWZ1j95bkxXuy1Dm3gXjVXNZBE7PFMFjQufSYmHwjYDhj9kO9zA/exec";
+      let form = document.querySelector("#form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        let d = new FormData(form);
+        fetch(url, {
+          method: "post",
+          body: d,
+        })
+          .then((response) => response.text())
+          .then((final_response) => console.log(final_response));
+      });
+
       document.querySelector("form").addEventListener("submit", function (e) {
         e.preventDefault();
         alert("Your inquiry has been submitted successfully!");
