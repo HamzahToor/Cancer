@@ -104,6 +104,15 @@
     <section id="contact" class="container">
       <h2 class="section-title">Contact Us</h2>
       <form id="form" method="post">
+        <label>Date:</label>
+        <input
+          type="date"
+          name="date"
+          class="form-control"
+          id="udate"
+          placeholder="Enter your date"
+          required
+        />
         <label>Name:</label>
         <input
           type="text"
@@ -143,7 +152,7 @@
 
     <script>
       let url =
-        "https://script.google.com/macros/s/AKfycbzdx5JNf1uZu84QDWgSWZ1j95bkxXuy1Dm3gXjVXNZBE7PFMFjQufSYmHwjYDhj9kO9zA/exec";
+        "https://script.google.com/macros/s/AKfycbwZHe2BmWb5AbDYrcESTeWOftUf_9Z1GKO85U6ZmZPn53gpjqKE7UQpVHfwQUYd1rNh6Q/exec";
       let form = document.querySelector("#form");
       form.addEventListener("submit", (e) => {
         e.preventDefault();
