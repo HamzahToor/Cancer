@@ -151,25 +151,6 @@
       &copy; 2025 Cancer Care & Consultation. All rights reserved.
     </footer>
 
-    <script>
-      let url =
-        "https://script.google.com/macros/s/AKfycbwZHe2BmWb5AbDYrcESTeWOftUf_9Z1GKO85U6ZmZPn53gpjqKE7UQpVHfwQUYd1rNh6Q/exec";
-      let form = document.querySelector("#form");
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        let d = new FormData(form);
-        fetch(url, {
-          method: "post",
-          body: d,
-        })
-          .then((response) => response.text())
-          .then((final_response) => console.log(final_response));
-      });
-
-      document.querySelector("form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Your inquiry has been submitted successfully!");
-      });
-    </script>
+    
   </body>
 </html>
